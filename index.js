@@ -36,7 +36,7 @@ function percentage(num, percent){
     if(percent > 1 || percent < 0){
         return "invalid precent!"
     }
-    return num * (percent / 100);
+    return Number(num) * (percent / 100);
 }
 
-console.log(percentage(100, -2))
+console.log(percentage(100, 0.03))
