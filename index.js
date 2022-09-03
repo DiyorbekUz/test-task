@@ -1,8 +1,13 @@
 
 // 1-solution
 function hide_card(card){
+
     let newCardNumber = ''
     card = card.replace(/\s/g, '');
+
+    if(card.length != 16){
+        return "Invalid card number!"
+    }
 
     for(let i = 0; i<= card.length-1; i++){
         if(i <= 3){
