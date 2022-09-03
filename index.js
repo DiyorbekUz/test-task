@@ -28,7 +28,10 @@ console.log(hide_card('4276 4500 0000 1313'))
 
 
 function percentage(num, percent){
+    if(percent > 1 || percent < 0){
+        return "invalid precent!"
+    }
     return num * (percent / 100);
 }
 
-console.log(percentage(100, 0.03))
+console.log(percentage(100, -2))
